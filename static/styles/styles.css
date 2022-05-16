@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Calibri';
+    box-sizing: border-box;
+    color: #302E2C;
+}
+
+body{
+    background: #f3f5f9;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+
+.wrapper > .sidebar{
+    width: 5rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper > .sidebar ul li{
+    flex: 1;
+    display: flex;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper > .rightSideBar{
+    width: 3.5rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper > .rightSideBar ul{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    height: 30%; 
+    justify-content: center;
+    width: 3.5rem;
+    border-radius: 1rem 0rem 0 1rem;
+}
+
+.wrapper > .rightSideBar ul li{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mainContent{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    padding: 0 6rem 0;
+    overflow: auto;
+    animation: transitionIn 0.5s;
+}
+
+.header{
+    height: 10rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header > span{
+    border-left: 0.3rem #9183C9 solid;
+    padding-left: 1rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5rem;
+}
+
+.title{
+    margin: 0 0 0;
+}
