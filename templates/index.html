@@ -11,16 +11,17 @@
 <body>
     <div class="wrapper">
         <div class="sidebar">
-            <ul style="display: flex; flex-direction: column; align-items: center; height: 50%; justify-content: center;">
-                <li style="background-color: #312F2E;"><a href="#intro"><i class="fa-solid fa-house fa-2x" style="color:#9183C9;"></i></a></li>
-                <li><a href="#skills"><i class="fa-solid fa-toolbox fa-2x" style="color: grey;"></i></a></li>
-                <li><a href="#projects"><i class="fa-brands fa-python fa-2x" style="color: grey;"></i></a></li>
-                <li><a href="#experience"><i class="fa-solid fa-user-tie fa-2x" style="color: grey;"></i></a></li>
-                <li><a href="#contact"><i class="fa-solid fa-address-card fa-2x" style="color: grey;"></i></i></a></li>
+            <ul style="display: flex; flex-direction: column; align-items: center; height: 50%; justify-content: center;">    
+                <li id="intro" onclick="iconChange(this.id)" style="background-color: #312F2E;"><a href="#introSection"><i id="introIcon" class="fa-solid fa-house fa-2x" style="color:#9183C9;"></i></a></li>
+                <li id="skills" onclick="iconChange(this.id)"><a href="#skillsSection"><i id="skillsIcon" class="fa-solid fa-toolbox fa-2x" style="color: grey;"></i></a></li>
+                <li id="projects" onclick="iconChange(this.id)"><a href="#projectsSection"><i id="projectsIcon" class="fa-brands fa-python fa-2x" style="color: grey;"></i></a></li>
+                <li id="experience" onclick="iconChange(this.id)"><a href="#experienceSection"><i id="experienceIcon" class="fa-solid fa-user-tie fa-2x" style="color: grey;"></i></a></li>
+                <li id="blogs" onclick="iconChange(this.id)"><a href="#blogsSection"><i id="blogsIcon" class="fa-brands fa-blogger fa-2x" style="color: grey;"></i></i></a></li>
+                <li id="contact" onclick="iconChange(this.id)"><a href="#contactsSection"><i id="contactIcon" class="fa-solid fa-address-card fa-2x" style="color: grey;"></i></i></a></li>
             </ul>
         </div>
         <div class="container">
-            <section id="intro">
+            <section id="introSection">
                 <div class="mainContent">
                     <div>
                         <div class="header"><span>ABOUT</span></div>
@@ -36,7 +37,7 @@
                                     Skilled at utilizing data acquisition, modeling, and statistical analysis, to create customer-facing dashboards, applications and machine learning models that assist companies with product development, 
                                     market research, design and analysis. Passionate about collaborating with teams to help build and grow innovative companies, products and solutions.
                                 </span>
-                                <div style="display: flex; width: 30rem; height: 3rem; margin-top: 2rem; gap: 1rem;">
+                                <div style="display: flex; width: 30rem; height: 3.5rem; margin-top: 2rem; gap: 1rem;">
                                     <div style="background-color: #9183C9; border-radius: 0.3rem; flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.5rem">
                                         <img src="../static/img/go_arrow.png" style="height: 1.5rem;">
                                         <span style="color: white; font-weight: bold">
@@ -58,7 +59,7 @@
                     </div> 
                 </div>
             </section>
-            <section id="skills">
+            <section id="skillsSection">
                 <div class="mainContent">
                     <div>
                         <div class="header"><span>SKILLS</span></div>
@@ -74,7 +75,7 @@
                                     Skilled at utilizing data acquisition, modeling, and statistical analysis, to create customer-facing dashboards, applications and machine learning models that assist companies with product development, 
                                     market research, design and analysis. Passionate about collaborating with teams to help build and grow innovative companies, products and solutions.
                                 </span>
-                                <div style="display: flex; width: 30rem; height: 3rem; margin-top: 2rem; gap: 1rem;">
+                                <div style="display: flex; width: 30rem; height: 3.5rem; margin-top: 2rem; gap: 1rem;">
                                     <div style="background-color: #9183C9; border-radius: 0.3rem; flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.5rem">
                                         <img src="../static/img/go_arrow.png" style="height: 1.5rem;">
                                         <span style="color: white; font-weight: bold">
@@ -105,5 +106,23 @@
             </ul>
         </div>
     </div>
+    <script>
+        function iconChange(clicked_id) {
+            let elemList = ['intro', 'skills', 'projects', 'experience', 'blogs', 'contact']
+
+            for (let i=0; i < elemList.length; i++) {
+                let elemBG = document.getElementById(elemList[i]);
+                elemBG.style.backgroundColor = "";
+                let elemIcon = document.getElementById(elemList[i] + 'Icon')
+                elemIcon.style.color = 'grey';
+            }
+
+            let elemBG = document.getElementById(clicked_id);
+            elemBG.style.backgroundColor = '#312F2E';
+
+            let elemIcon = document.getElementById(clicked_id + 'Icon')
+            elemIcon.style.color = '#9183C9'; 
+        }
+    </script>
 </body>
 </html>
