@@ -101,3 +101,20 @@ body{
 .title{
     margin: 0 0 0;
 }
+
+section {
+    flex: 0 0 auto;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type:y mandatory;
+}
