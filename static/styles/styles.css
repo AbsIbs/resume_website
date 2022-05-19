@@ -4,7 +4,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Calibri';
+    font-family: Calibri, sans-serifs;
     box-sizing: border-box;
     color: white;
 }
@@ -62,14 +62,12 @@ body{
     justify-content: center;
 }
 
-
-
 .mainContent{
     display: flex;
     flex:1;
     flex-direction: column;
     padding: 0 6rem 0;
-    overflow: auto;
+    overflow-y: visible;
 }
 
 .header{
