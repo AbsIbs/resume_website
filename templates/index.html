@@ -15,16 +15,16 @@
     <div class="wrapper">
         <div class="sidebar">
             <ul style="display: flex; flex-direction: column; align-items: center; height: 50%; justify-content: center;">    
-                <li id="intro" onclick="iconChange(this.id)" style="background-color: #312F2E;"><a href="#introSection"><i id="introIcon" class="fa-solid fa-house fa-2x" style="color:#9183C9;"></i></a></li>
+                <li id="about" style="background-color: #312F2E;"><a href="#aboutSection" onclick="iconChange('about')"><i id="aboutIcon" class="fa-solid fa-house fa-2x" style="color: #CF4C12;"></i></a></li>
                 <li id="skills"><a href="#skillsSection" onclick="iconChange('skills')"><i id="skillsIcon" class="fa-solid fa-toolbox fa-2x" style="color: grey;"></i></a></li>
                 <li id="projects"><a href="#projectsSection" onclick="iconChange('projects')"><i id="projectsIcon" class="fa-brands fa-python fa-2x" style="color: grey;"></i></a></li>
                 <li id="experience"><a href="#experienceSection" onclick="iconChange('experience')"><i id="experienceIcon" class="fa-solid fa-user-tie fa-2x" style="color: grey;"></i></a></li>
                 <li id="blogs"><a href="#blogsSection" onclick="iconChange('blogs')"><i id="blogsIcon" class="fa-brands fa-blogger fa-2x" style="color: grey;"></i></i></a></li>
-                <li id="contact"><a href="#contactsSection" onclick="iconChange('contact')"><i id="contactIcon" class="fa-solid fa-address-card fa-2x" style="color: grey;"></i></i></a></li>
+                <li id="contact"><a href="#contactSection" onclick="iconChange('contact')"><i id="contactIcon" class="fa-solid fa-address-card fa-2x" style="color: grey;"></i></i></a></li>
             </ul>
         </div>
         <div class="container">
-            <section id="introSection">
+            <section id="aboutSection">
                 <div class="mainContent">
                     <div>
                         <div class="header"><span>ABOUT</span></div>
@@ -36,25 +36,19 @@
                                 </div>
                                 <br>
                                 <br>
-                                <span style="font-weight: bold; font-size: 1.5rem;">
+                                <span style="font-weight: normal; font-size: 1.5rem;">
                                     Experienced Data Scientist with a degree in Accounting & Finance and a keen interest in Entrepreneurship & Capital Markets. 
                                     Skilled at utilizing data acquisition, modeling, and statistical analysis, to create customer-facing dashboards, applications and machine learning models that assist companies with product development, 
-                                    market research, design and analysis. Passionate about collaborating with teams to help build and grow innovative companies, products and solutions.
+                                    market research, design and analysis. With over 600hrs in Data Science training, I am passionate about collaborating with teams to help build and grow innovative companies, products and solutions.
                                 </span>
-                                <div style="display: flex; width: 30rem; height: 3.5rem; margin-top: 2rem; gap: 1rem;">
-                                    <div style="background-color: #9183C9; border-radius: 0.3rem; flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.5rem">
-                                        <img src="../static/img/go_arrow.png" style="height: 1.5rem;">
-                                        <span style="color: white; font-weight: bold">
-                                            View Portfolio
-                                        </span>
-                                    </div>
-                                    <div style="background-color: #312F2E; border-radius: 0.3rem; flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.5rem">
-                                        <img src="../static/img/document.png" style="height: 1.5rem;">
-                                        <span style="color: white; font-weight: bold">
+                                <a href="../static/docs/Resume.pdf" target="_blank">
+                                    <div style="background-color: #CF4C12; border-radius: 2rem; display: flex; align-items: center; justify-content: center; width: 15rem; height: 3.5rem; margin-top: 2rem;">
+                                        <img src="../static/img/document.png" style="height: 1.5rem; color: black;">
+                                        <span style="color: black; font-weight: bold">
                                             View Resume
                                         </span>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div style="flex:0.75; display: flex; justify-content: center;">
                                 <img src="../static/img/dp.png" style="height: 75%;">
@@ -65,121 +59,131 @@
             </section>
             <section id="skillsSection">
                 <div class="mainContent">
-                    <div>
-                        <div class="header"><span>SKILLS</span></div>
-                        <div class="content" style="gap: 2rem;">
-                            <div class="skillsContainer">
-                                <div class="eachSkill">
-                                    <span class="skillsHeader">Data Analysis</span>
-                                    <div class="skillsBar">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>  
-                                        <div></div>  
-                                        <div></div>  
-                                    </div>
+                    <div class="header"><span>SKILLS</span></div>
+                    <div class="skillContent" style="display: flex; gap: 1rem; flex-direction: column;">
+                        <div class="row1" style="display: flex; flex-direction: row;">
+                            <div style="flex: 1; margin: 1rem;">
+                                <div style="display: flex; gap: 0.5rem">
+                                    <img class="iconForSkills" src="../static/img/python.png">
+                                    <img class="iconForSkills" src="../static/img/pandas.png">
+                                    <img class="iconForSkills" src="../static/img/sql.png">
                                 </div>
-                                <div class="eachSkill">
-                                    <span class="skillsHeader">Data Science</span>
-                                    <div class="skillsBar">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>  
-                                        <div></div>  
-                                        <div></div>  
-                                    </div>
+                                <div class="skillHeading">
+                                    Data Analysis
                                 </div>
-                                <div class="eachSkill">
-                                    <span class="skillsHeader">UI/UX Designing</span>
-                                    <div class="skillsBar">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>  
-                                        <div></div>  
-                                        <div style="background-color: #312F2E;"></div>  
-                                    </div>
-                                </div>
-                                <div class="eachSkill">
-                                    <span class="skillsHeader">Video Editing</span>
-                                    <div class="skillsBar">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>  
-                                        <div></div>  
-                                        <div style="background-color: #312F2E;"></div>  
-                                    </div>
-                                </div>
-                                <div class="eachSkill">
-                                    <span class="skillsHeader">Web Development</span>
-                                    <div class="skillsBar">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>  
-                                        <div style="background-color: #312F2E;"></div>  
-                                        <div style="background-color: #312F2E;"></div>  
-                                    </div>
+                                <div class="skillTitle">Python | Pandas | SQL</div>
+                                <div class="skillDesc">
+                                    Experience using database querying languages such as SQL and the Pandas library to gather, wrangle and analyse data.
                                 </div>
                             </div>
-                            <div style="flex: 2; display: flex; justify-content: center;">
-                                <div style="display: flex; flex: 1;">
-                                    <div style="display: flex; flex-direction: column;">
-                                        <div style="flex: 1; margin: 1rem;">
-                                            <div style="display: flex; gap: 0.5rem">
-                                                <img class="iconForSkills" src="../static/img/python.png">
-                                                <img class="iconForSkills" src="../static/img/pandas.png">
-                                                <img class="iconForSkills" src="../static/img/sql.png">
-                                                <img class="iconForSkills" src="../static/img/tableau.png">
-                                            </div>
-                                            <div class="skillTitle">Python, Pandas, SQL, Tableau</div>
-                                            <div class="skillDesc">
-                                                Able to query data through SQL, wrangle data using Python, draw insights using pandas, and finally visualise this data using tableau.
-                                            </div>
-                                        </div>
-                                        <div style="flex: 1; margin: 1rem;">
-                                            <div style="display: flex; gap: 0.5rem;">
-                                                <img class="iconForSkills" src="../static/img/html.png">
-                                                <img class="iconForSkills" src="../static/img/css.png">
-                                                <img class="iconForSkills" src="../static/img/js.png">
-                                                <img class="iconForSkills" src="../static/img/flask.svg">
-                                            </div>
-                                            <div class="skillTitle">HTML, CSS, JS, Flask</div>
-                                            <div class="skillDesc">
-                                                Deployed numerous Machine Learning webapps by utilizing a combination of HTML, CSS and JS with python's Flask as a backend.
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div style="flex: 1; margin: 1rem;">
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <img class="iconForSkills" src="../static/img/seaborn.svg">
+                                    <img class="iconForSkills" src="../static/img/plotly.png">
+                                    <img class="iconForSkills" src="../static/img/tableau-software.svg">
                                 </div>
-                                <div style="display: flex; flex: 1;">
-                                    <div style="display: flex; flex-direction: column;">
-                                        <div style="flex: 1; margin: 1rem;">
-                                            <div style="display: flex; gap: 0.5rem;">
-                                                <img class="iconForSkills" src="../static/img/numpy.png">
-                                                <img class="iconForSkills" src="../static/img/tf.png">
-                                                <img class="iconForSkills" src="../static/img/sklearn.svg">
-                                                <img class="iconForSkills" src="../static/img/gym.png">
-                                            </div>
-                                            <div class="skillTitle">Numpy, Sklearn, Tensforlow, Open AI Gym</div>
-                                            <div class="skillDesc">
-                                                Experience with NLP, Time series, regression and classification modelling.
-                                                Additional experience with neural networks as well as Reinforcement Learning algorithms.
-                                            </div>
-                                        </div>
-                                        <div style="flex: 1; margin: 1rem;">
-                                            <div style="display: flex; gap: 0.5rem;">
-                                                <img class="iconForSkills" src="../static/img/premiere pro.png">
-                                                <img class="iconForSkills" src="../static/img/after effects.png">
-                                                <img class="iconForSkills" src="../static/img/figma.png">
-                                                <img class="iconForSkills" src="../static/img/sketch.png">
-                                            </div>
-                                            <span class="skillTitle">
-                                                Adobe Premiere Pro & After Effects, Figma, Sketch
-                                            </span>
-                                        </div>
-                                    </div>
+                                <div class="skillHeading">
+                                    Data Visualisation
+                                </div>
+                                <div class="skillTitle">Seaborn | Plotly | Tabealu</div>
+                                <div class="skillDesc">
+                                    Handled Data Visualisation by creating interactive graphs using python libraries as well as dashboards using Tableau. 
+                                </div>
+                            </div>
+                            <div style="flex: 1; margin: 1rem;">
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <img class="iconForSkills" src="../static/img/numpy.png">
+                                    <img class="iconForSkills" src="../static/img/sklearn.svg">
+                                </div>
+                                <div class="skillHeading">
+                                    Machine Learning
+                                </div>
+                                <div class="skillTitle">Numpy | Sklearn</div>
+                                <div class="skillDesc">
+                                    Utilized traditional regression and classification algorithms e.g. SVMs to model structured data. 
+                                    Also modelled Time Series Data using SARIMAX/Facebook Prophet and created NLP models using vectorization.
+                                </div>
+                            </div>
+                            <div style="flex: 1; margin: 1rem;">
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <img class="iconForSkills" src="../static/img/tf.png">
+                                    <img class="iconForSkills" src="../static/img/gym.png">
+                                </div>
+                                <div class="skillHeading">
+                                    Advanced Machine Learning
+                                </div>
+                                <div class="skillTitle">Tensorflow | Open AI Gym</div>
+                                <div class="skillDesc">
+                                    Worked with Neural Networks architectures (LSTM, Conv, GRU) to create regression and classification models.
+                                    Also used Reinforcement Learning algorithms to model financial data.
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                        <div class="row2" style="display: flex; flex: 1; flex-direction: row;">
+                            <div style="flex: 1; margin: 1rem;">
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <img class="iconForSkills" src="../static/img/html.png">
+                                    <img class="iconForSkills" src="../static/img/css.png">
+                                    <img class="iconForSkills" src="../static/img/js.png">
+                                    <img class="iconForSkills" src="../static/img/streamlit-mark-color.svg">
+                                    <img class="iconForSkills" src="../static/img/flask.png">        
+                                </div>
+                                <div class="skillHeading">
+                                    Web Development
+                                </div>
+                                <div class="skillTitle">HTML | CSS | JS | Streamlit | Flask</div>
+                                <div class="skillDesc">
+                                    Deployed simple ML webapps using Streamlit and more complex ones using a combination of HTML, CSS and JS with python's Flask as a backend.
+                                </div>
+                            </div>
+                            <div style="flex: 1; margin: 1rem;">
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <img class="iconForSkills" src="../static/img/figma.png">
+                                    <img class="iconForSkills" src="../static/img/sketch.png">
+                                </div>
+                                <div class="skillHeading">
+                                    UI/UX Designing
+                                </div>
+                                <div class="skillTitle">Figma | Sketch</div>
+                                <div class="skillDesc">
+                                    Designed over 300 screens worth of desktop and mobile applications.
+                                </div>
+                            </div>
+                            <div style="flex: 1; margin: 1rem;">
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <img class="iconForSkills" src="../static/img/premiere pro.png">
+                                    <img class="iconForSkills" src="../static/img/after effects.png">
+                                </div>
+                                <div class="skillHeading">
+                                    Video Editing
+                                </div>
+                                <div class="skillTitle">Adobe Premiere Pro | Adobe After Effects</div>
+                                <div class="skillDesc">
+                                   Created promotional trailer videos that utilize typography as well as engaging lifestyle videos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projectsSection">
+                <div class="mainContent">
+                    <div class="header"><span>PROJECTS</span></div>
+                </div>
+            </section>
+            <section id="experienceSection">
+                <div class="mainContent">
+                    <div class="header"><span>WORK EXPERIENCE</span></div>
+                </div>
+            </section>
+            <section id="blogsSection">
+                <div class="mainContent">
+                    <div class="header"><span>BLOGS</span></div>
+                </div>
+            </section>
+            <section id="contactSection">
+                <div class="mainContent">
+                    <div class="header"><span>CONTACT ME</span></div>
                 </div>
             </section>
         </div>
@@ -212,7 +216,7 @@
     </script>
     <script>
         function iconChange(clicked_id) {
-            let elemList = ['intro', 'skills', 'projects', 'experience', 'blogs', 'contact']
+            let elemList = ['about', 'skills', 'projects', 'experience', 'blogs', 'contact']
 
             for (let i=0; i < elemList.length; i++) {
                 let elemBG = document.getElementById(elemList[i]);
@@ -225,7 +229,7 @@
             elemBG.style.backgroundColor = '#312F2E';
 
             let elemIcon = document.getElementById(clicked_id + 'Icon')
-            elemIcon.style.color = '#9183C9'; 
+            elemIcon.style.color = '#CF4C12'; 
         }
     </script>
 </body>

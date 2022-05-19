@@ -6,11 +6,11 @@
     text-decoration: none;
     font-family: 'Calibri';
     box-sizing: border-box;
-    color: #302E2C;
+    color: white;
 }
 
 body{
-    background: #f3f5f9;
+    background: #151515;
 }
 
 .wrapper{
@@ -21,7 +21,7 @@ body{
 
 .wrapper > .sidebar{
     width: 5rem;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: #232323;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -45,7 +45,7 @@ body{
 }
 
 .wrapper > .rightSideBar ul{
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: #232323;
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -88,7 +88,7 @@ body{
 }
 
 .header > span{
-    border-left: 0.3rem #9183C9 solid;
+    border-left: 0.3rem #CF4C12 solid;
     padding-left: 1rem;
 }
 
@@ -132,7 +132,7 @@ section {
 
 .textWrapper .text{
     position: relative;
-    color: #9183C9;
+    color: #CF4C12;
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -144,8 +144,8 @@ section {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #f3f5f9;
-    border-left: 4px solid #9183C9;
+    background-color: #151515;
+    border-left: 4px solid #CF4C12;
     animation: animate 2.5s steps(14) infinite;
 }
 
@@ -159,9 +159,10 @@ section {
 }
 
 .skillsContainer{
-    display: flex; 
-    flex-direction:column;
+    display: flex;
     flex: 1;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 .skillsContainer div{
@@ -183,8 +184,7 @@ section {
 
 .skillsBar div{
     flex:1;
-    background-color: #9183C9;
-    box-shadow: #302E2C 1px;
+    background-color: #CF4C12;
 }
 
 .eachSkill{
@@ -204,4 +204,9 @@ section {
 
 .skillDesc{
     text-align: justify;
+}
+
+.skillHeading{
+    font-size: 1.5rem; 
+    font-weight: bold;
 }
