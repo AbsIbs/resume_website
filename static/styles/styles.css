@@ -309,10 +309,36 @@ section {
     justify-content: center; 
     width: 12.5rem; 
     height: 3rem; 
-    font-weight: bold;
+    font-weight: 10px
 }
 
 .btn-viewRepo{
+    border: 1px solid #808080;
+    color: #808080;
+}
+
+.btn-viewRepo:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-launchWebappp{
+    border: 1px solid #808080;
+    color: #808080;
+}
+
+.btn-launchWebappp:hover {
+    background-color: #CF4C12;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+/* Buttons within hover effect */
+
+/* .btn-viewRepo{
     background-color: white;
     color: black;
 }
@@ -320,4 +346,4 @@ section {
 .btn-launchWebappp{
     background-color: #CF4C12;
     color: black;
-}
+} */
