@@ -275,10 +275,49 @@ section {
     left: 0;
     margin-top: 1%;
     width: 100%;
+    display: none;
 }
 
 .thumbnailWrapper .thumbnailContainer .tabContent .blog-content{
     display:flex;
     flex-direction: row;
-    border: red 1px solid;
+    border-top: #808080 1px solid;
+}
+
+.thumbnailWrapper .thumbnailContainer .tabContent .blog-content .img{
+    padding-top: 1rem;
+}
+
+.thumbnailWrapper .thumbnailContainer .tabContent .blog-content .title{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.repoWebappContainer{
+    display: flex;
+    flex-direction: row; 
+    gap: 1rem; 
+    margin-top: 0.5rem;
+}
+
+.repoWebappContainer a{
+    border-radius: 0.25rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 12.5rem; 
+    height: 3rem; 
+    font-weight: bold;
+}
+
+.btn-viewRepo{
+    background-color: white;
+    color: black;
+}
+
+.btn-launchWebappp{
+    background-color: #CF4C12;
+    color: black;
 }

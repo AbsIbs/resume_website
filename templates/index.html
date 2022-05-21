@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Abass Resume Website</title>
 </head>
 <body>
@@ -53,7 +54,7 @@
                                 <!-- </a> -->
                             </div>
                             <div style="flex:0.75; display: flex; justify-content: center;">
-                                <img src="../static/img/dp.png" style="height: 125%;">
+                                <img src="../static/img/dp.png" style="height: 75vh;">
                             </div>
                         </div>
                     </div> 
@@ -181,19 +182,19 @@
                     <div class="thumbnailWrapper">
                         <div class="thumbnailContainer">
                             <ul class="grid-col">
-                                <li><a href="#img-1">
+                                <li><a href="#img-1" style="cursor: pointer;">
                                     <img src="../static/img/stocks1.png" alt="">
                                     <div class="projectTitle">Portfolio Optimization</div>
                                 </a></li>
-                                <li><a href="#img-2">
+                                <li><a href="#img-2" style="cursor: pointer;">
                                     <img src="../static/img/nedava.png" alt="">
                                     <div class="projectTitle">Nevada Time Series</div>
                                 </a></li>
-                                <li><a href="#img-3">
+                                <li><a href="#img-3" style="cursor: pointer;">
                                     <img src="../static/img/h1n1.png" alt="">
                                     <div class="projectTitle">Flu Vaccine Predictor</div>
                                 </a></li>
-                                <li><a href="#img-4">
+                                <li><a href="#img-4" style="cursor: pointer;">
                                     <img src="../static/img/house_price_predictor.png" alt="">
                                     <div class="projectTitle">House Price Predictor</div>
                                 </a></li>
@@ -208,17 +209,97 @@
                                             <img src="../static/img/stocks1.png" alt="" style="height: 40vh;">
                                         </div>
                                         <div class="title">
-                                            <h2>Lorem ipsum dolor sit amet.</h2>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, repudiandae.</p>
-                                            <button type="button" class="btn-viewRepo"></button>
+                                            <h2>Portfolio Optimization Using Reinforcement Learning</h2>
+                                            <p>
+                                                <span style="font-weight: bold;">Business Case</span>
+                                                <br>
+                                                An investor wishes to know how best to allocate their portfolio of assets given the changes in the stock market the previous day.
+                                            </p>
+                                            <p>
+                                                <span style="font-weight: bold;">Results</span>
+                                                <br>
+                                                Trained a trading model using reinforcement learning algorithms to buy/sell/hold stock holdings within a portfolio in such a way as to maximise ROI. Yielded a 2% increase in comparison to the market when backtested.
+                                            </p>
+                                            <div class="repoWebappContainer">
+                                                <a href="https://github.com/AbsIbs/portfolio_optimization" class="btn-viewRepo" target="_blank">View Repo</a>
+                                                <a href="" class="btn-launchWebappp" target="_blank">Launch Webapp</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="img-2"></div>
-                                <div id="img-3"></div>
-                                <div id="img-4"></div>
+                                <div id="img-2" class="tabContent">
+                                    <div class="blog-content">
+                                        <div class="img">
+                                            <img src="../static/img/nedava.png" alt="" style="height: 40vh;">
+                                        </div>
+                                        <div class="title">
+                                            <h2>Nevada Time Series Analysis</h2>
+                                            <p>
+                                                <span style="font-weight: bold;">Business Case</span>
+                                                <br>
+                                                Property investors wish to know which zipcode in Nevada is best to invest in for the next month.
+                                            </p>
+                                            <p>
+                                                <span style="font-weight: bold;">Results</span>
+                                                <br>
+                                                Forecasted house prices in Nevada using SARIMAX, Facebook Prophet and Neural Network architectures (LSTM, GRU, CNN) with the best model achieving a MAPE (mean average percentage error) of 0.035.
+                                            </p>
+                                            <div class="repoWebappContainer">
+                                                <a href="https://github.com/AbsIbs/nevada_time_series" class="btn-viewRepo" target="_blank">View Repo</a>
+                                                <a href="https://public.tableau.com/app/profile/abs4364/viz/NevadaTimeSeriesAnalysis/Dashboard" class="btn-launchWebappp" target="_blank">Launch Dashboard</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="img-3" class="tabContent">
+                                    <div class="blog-content">
+                                        <div class="img">
+                                            <img src="../static/img/h1n1.png" alt="" style="height: 40vh;">
+                                        </div>
+                                        <div class="title">
+                                            <h2>Flu Vaccine Predictor</h2>
+                                            <p>
+                                                <span style="font-weight: bold;">Business Case</span>
+                                                <br>
+                                                Public Health agencies want to find a means to accurately predict the vaccination status of an individual i.e. whether or not they have taken the flu/h1n1 vaccine
+                                            </p>
+                                            <p>
+                                                <span style="font-weight: bold;">Results</span>
+                                                <br>
+                                                Constructed a pipeline using classification models (Trees, Logistic Regression, Boosting) on over 26,000 responses from the US National Flu Survey from 2009. When optimized with Optuna, best model achieved 78% accuracy.
+                                            </p>
+                                            <div class="repoWebappContainer">
+                                                <a href="https://github.com/AbsIbs/H1N1_flu_vaccine_project" class="btn-viewRepo" target="_blank">View Repo</a>
+                                                <a href="https://share.streamlit.io/absibs/flu_vaccine_predictor/main/stream.py" class="btn-launchWebappp" target="_blank">Launch Webapp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="img-4" class="tabContent">
+                                    <div class="blog-content">
+                                        <div class="img">
+                                            <img src="../static/img/house_price_predictor.png" alt="" style="height: 40vh;">
+                                        </div>
+                                        <div class="title">
+                                            <h2>US House Price Predictor</h2>
+                                            <p>
+                                                <span style="font-weight: bold;">Business Case</span>
+                                                <br>
+                                                A real estate company based in Kings County, US aims to better inform its clients by creating an house price predictor based on numerous features e.g. bedroom size, sqft living space.
+                                            </p>
+                                            <p>
+                                                <span style="font-weight: bold;">Results</span>
+                                                <br>
+                                                Performed inferential and predictive modeling on over 21,000 houses through training multiple linear regression models. Achieved an R squared of 0.85 through feature engineering and webscraping.
+                                            </p>
+                                            <div class="repoWebappContainer">
+                                                <a href="https://github.com/AbsIbs/King_County_Project" class="btn-viewRepo" target="_blank">View Repo</a>
+                                                <a href="https://kc-house-predictor.herokuapp.com/" class="btn-launchWebappp" target="_blank">Launch Webapp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        
                         </div>
                     </div>
                 </div>
@@ -283,6 +364,21 @@
             let elemIcon = document.getElementById(clicked_id + 'Icon')
             elemIcon.style.color = '#CF4C12'; 
         }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.thumbnailContainer .grid-col li a').click(function(e){
+                let elemList = ['img-1', 'img-2', 'img-3', 'img-4']
+                for (let i=0; i < elemList.length; i++) {
+                    let href = document.getElementById(elemList[i]);
+                    href.style.display = "none";
+                }
+
+                let href = e.target.parentElement.getAttribute('href')
+                $(href).fadeIn();
+                e.preventDefault();
+            })
+        })
     </script>
 </body>
 </html>
