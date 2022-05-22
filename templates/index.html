@@ -30,17 +30,16 @@
             <section id="introSection" class="backgroundImage">
                 <div class="mainContent">
                     <div>
-                        <div class="header"><span>INTRO</span></div>
+                        <div class="header"><span>Hello World</span></div>
                         <div class="introContent" style="justify-content: flex-end;">
                             <div class="bottomContentPosition" style="color: white; margin-bottom: 5rem;">
                                 <p style="font-size: 40px; margin-bottom: -2rem; font-weight: normal; font-family: 'Nunito', sans-serif;"> 
                                     My name is,
                                 </p>
-                                <h1 style="font-size: 190px; margin-bottom: -2rem; font-family: 'Nunito', sans-serif;">
+                                <h1 style="font-size: 190px; margin-bottom: -2rem;">
                                     ABASS
                                 </h1>
                                 <h3 style="font-size: 30px; font-weight: normal; font-family: 'Nunito', sans-serif;">
-                                    <!-- I HELP COMPANIES CREATE AND DEPLOY INNOVATIVE MACHINE LEARNING APPS -->
                                     I help companies create and deploy innovative machine learning apps
                                 </h3>
                                 <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 2rem;">
@@ -62,18 +61,18 @@
                         <div class="header"><span>ABOUT</span></div>
                         <div class="content">
                             <div class="title" style="flex: 1;">
-                                <br>
-                                <br>
-                                <span style="font-weight: normal; font-size: 1rem; line-height: 200%;">
+                                <span style="font-size: 50px; font-weight: bold;">
+                                    I'm
+                                </span>
+                                <span id="titles" style="font-size: 50px; font-weight: bold; color: #CF4C12;"></span>
+                                <p style="font-weight: normal; font-size: 1rem; line-height: 200%; margin-top: 1.5rem;">
                                     Experienced Data Scientist with a degree in Accounting & Finance and a keen interest in Entrepreneurship & Capital Markets. 
                                     Skilled at utilizing data acquisition, modeling, and statistical analysis, to create customer-facing dashboards, applications and machine learning models that assist companies with product development, 
                                     market research, design and analysis. With over 600hrs in Data Science training, I am passionate about collaborating with teams to help build and grow innovative companies, products and solutions.
-                                </span>
-                                <div style="background-color: #CF4C12; border-radius: 2rem; display: flex; align-items: center; justify-content: center; width: 15rem; height: 3.5rem; margin-top: 2rem;">
-                                    <span style="color: black; font-weight: bold">
-                                        View linkedin
-                                    </span>
-                                </div>
+                                </p>
+                                <a href="https://www.linkedin.com/in/abass-ibrahim/" target="_blank" style="background-color: #CF4C12; border-radius: 2rem; display: flex; align-items: center; justify-content: center; width: 15rem; height: 3.5rem; margin-top: 2rem; color: black; font-weight: bold">
+                                    View linkedIn
+                                </a>
                             </div>
                             <div style="flex:0.75; display: flex; justify-content: center;">
                                 <img src="../static/img/dp.png" style="height: 75vh;">
@@ -382,6 +381,19 @@
                 e.preventDefault();
             })
         })
+    </script>
+    <script>
+        let titleList = ['a Data Scientist.', 'a Data Analyst.', 'an Accountant.', 'a Financial Analyst.', 'a Designer.', 'a Web Developer.', 'an Entrepreneur.']
+        var index = 0;                                
+        $("#titles").text(titleList[0]);               
+
+        (function animate() {                       
+            $("#titles").fadeOut(1000, function() {     
+                index = (index + 1) % titleList.length;      
+                this.textContent = titleList[index];        
+            }).fadeIn(4000, animate);                   
+        })();
+
     </script>
 </body>
 </html>
