@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                             <div class="downButtonContainer" style="display: flex; justify-content: center;">
-                                <a href="#aboutSection" class="scrollDown">
+                                <a href="#aboutSection" class="scrollDown" onclick="aboutIconChange()">
                                     <div class="mouse">
                                         <span></span>
                                     </div>
@@ -361,6 +361,19 @@
         </div>
     </div>
     <script>
+        function aboutIconChange() {
+            let introBG = document.getElementById('intro');
+            introBG.style.backgroundColor = "";
+            let introIcon = document.getElementById('introIcon')
+            introIcon.style.color = 'grey';
+
+            let elemBG = document.getElementById('about');
+            elemBG.style.backgroundColor = '#312F2E';
+            let elemIcon = document.getElementById('aboutIcon')
+            elemIcon.style.color = '#CF4C12'; 
+        }
+    </script>
+    <script>
         function iconChange(clicked_id) {
             let elemList = ['intro', 'about', 'skills', 'projects', 'experience', 'blogs']
 
@@ -404,7 +417,6 @@
                 this.textContent = titleList[index];        
             }).fadeIn(4000, animate);                   
         })();
-
     </script>
 </body>
 </html>
