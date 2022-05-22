@@ -19,6 +19,7 @@ body{
 }
 
 .wrapper > .sidebar{
+    position: fixed;
     width: 5rem;
     background-color: #232323;
     display: flex; 
@@ -67,7 +68,7 @@ body{
     flex-direction: column;
     overflow: hidden;
     padding: 3rem 6rem 0;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 } 
 .header{
     font-size: 1.5rem;
@@ -192,11 +193,11 @@ section {
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    overflow-y: hidden;
+ /*    flex-wrap: nowrap; */
+    overflow-y: scroll;
     scroll-behavior: smooth;
     height: 100vh;
-    /* scroll-snap-type:y mandatory; */
+    scroll-snap-type:y mandatory;
 }
 
 .sectionTitle{
