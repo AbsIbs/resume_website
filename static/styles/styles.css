@@ -84,6 +84,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 80vh;
+    justify-content: center;
 }
 
 .introLink{
@@ -109,6 +110,64 @@ body{
     background-color: #CF4C12;
     color: black;
     font-weight: bold;
+}
+
+.scrollDown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mouse{
+    width: 2.5rem;
+    height: 5rem;
+    border: 2px solid #808080;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+}
+
+.mouse span{
+    width: 1rem;
+    height: 1rem;
+    background-color: #808080;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1s linear infinite;
+}
+
+.arrow span{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    transform: rotate(45deg);
+    animation: arrow-down 0.5s alternate infinite;
+}
+
+@keyframes move-wheel {
+    0%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}
+
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 .content{
