@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/01048f2c11.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Abass Resume Website</title>
 </head>
@@ -19,39 +18,62 @@
     <div class="wrapper">
         <div class="sidebar">
             <ul style="display: flex; flex-direction: column; align-items: center; height: 50%; justify-content: center;">    
-                <li id="about" style="background-color: #312F2E;"><a href="#aboutSection" onclick="iconChange('about')"><i id="aboutIcon" class="fa-solid fa-house fa-2x" style="color: #CF4C12;"></i></a></li>
-                <li id="skills"><a href="#skillsSection" onclick="iconChange('skills')"><i id="skillsIcon" class="fa-solid fa-toolbox fa-2x" style="color: grey;"></i></a></li>
-                <li id="projects"><a href="#projectsSection" onclick="iconChange('projects')"><i id="projectsIcon" class="fa-brands fa-python fa-2x" style="color: grey;"></i></a></li>
-                <li id="experience"><a href="#experienceSection" onclick="iconChange('experience')"><i id="experienceIcon" class="fa-solid fa-user-tie fa-2x" style="color: grey;"></i></a></li>
-                <li id="blogs"><a href="#blogsSection" onclick="iconChange('blogs')"><i id="blogsIcon" class="fa-brands fa-blogger fa-2x" style="color: grey;"></i></i></a></li>
-                <li id="contact"><a href="#contactSection" onclick="iconChange('contact')"><i id="contactIcon" class="fa-solid fa-address-card fa-2x" style="color: grey;"></i></i></a></li>
+                <li id="intro" style="background-color: #312F2E;"><a href="#introSection" onclick="iconChange('intro')"><i id="introIcon" class="fa-solid fa-house fa-xl" style="color: #CF4C12;"></i></a></li>
+                <li id="about"><a href="#aboutSection" onclick="iconChange('about')"><i id="aboutIcon" class="fa-solid fa-circle-info fa-xl" style="color: grey;"></i></a></li>
+                <li id="skills"><a href="#skillsSection" onclick="iconChange('skills')"><i id="skillsIcon" class="fa-solid fa-toolbox fa-xl" style="color: grey;"></i></a></li>
+                <li id="projects"><a href="#projectsSection" onclick="iconChange('projects')"><i id="projectsIcon" class="fa-brands fa-python fa-xl" style="color: grey;"></i></a></li>
+                <li id="experience"><a href="#experienceSection" onclick="iconChange('experience')"><i id="experienceIcon" class="fa-solid fa-user-tie fa-xl" style="color: grey;"></i></a></li>
+                <li id="blogs"><a href="#blogsSection" onclick="iconChange('blogs')"><i id="blogsIcon" class="fa-brands fa-blogger fa-xl" style="color: grey;"></i></i></a></li>
             </ul>
         </div>
         <div class="container">
+            <section id="introSection" class="backgroundImage">
+                <div class="mainContent">
+                    <div>
+                        <div class="header"><span>INTRO</span></div>
+                        <div class="introContent" style="justify-content: flex-end;">
+                            <div class="bottomContentPosition" style="color: white; margin-bottom: 5rem;">
+                                <p style="font-size: 40px; margin-bottom: -2rem; font-weight: normal; font-family: 'Nunito', sans-serif;"> 
+                                    My name is,
+                                </p>
+                                <h1 style="font-size: 190px; margin-bottom: -2rem; font-family: 'Nunito', sans-serif;">
+                                    ABASS
+                                </h1>
+                                <h3 style="font-size: 30px; font-weight: normal; font-family: 'Nunito', sans-serif;">
+                                    <!-- I HELP COMPANIES CREATE AND DEPLOY INNOVATIVE MACHINE LEARNING APPS -->
+                                    I help companies create and deploy innovative machine learning apps
+                                </h3>
+                                <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 2rem;">
+                                    <a href="../static/docs/Resume.pdf" target="_blank">
+                                        <div class="introLink introLinkCV">View CV</div>
+                                    </a>
+                                    <a href="mailto:abassdibrahim@gmail.com">
+                                        <div class="introLink introLinkContactMe">Contact Me</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
             <section id="aboutSection">
                 <div class="mainContent">
                     <div>
                         <div class="header"><span>ABOUT</span></div>
                         <div class="content">
                             <div class="title" style="flex: 1;">
-                                <span class="sectionTitle">Abass Ibrahim</span>
-                                <div class="textWrapper">
-                                    <span class="text sec-text">Data Scientist</span>
-                                </div>
                                 <br>
                                 <br>
-                                <span style="font-weight: normal; font-size: 1rem; line-height: 150%;">
+                                <span style="font-weight: normal; font-size: 1rem; line-height: 200%;">
                                     Experienced Data Scientist with a degree in Accounting & Finance and a keen interest in Entrepreneurship & Capital Markets. 
                                     Skilled at utilizing data acquisition, modeling, and statistical analysis, to create customer-facing dashboards, applications and machine learning models that assist companies with product development, 
                                     market research, design and analysis. With over 600hrs in Data Science training, I am passionate about collaborating with teams to help build and grow innovative companies, products and solutions.
                                 </span>
-                                <!-- <a href="../static/docs/Resume.pdf" target="_blank"> -->
-                                    <div style="background-color: #CF4C12; border-radius: 2rem; display: flex; align-items: center; justify-content: center; width: 15rem; height: 3.5rem; margin-top: 2rem;">
-                                        <span style="color: black; font-weight: bold">
-                                            View Resume
-                                        </span>
-                                    </div>
-                                <!-- </a> -->
+                                <div style="background-color: #CF4C12; border-radius: 2rem; display: flex; align-items: center; justify-content: center; width: 15rem; height: 3.5rem; margin-top: 2rem;">
+                                    <span style="color: black; font-weight: bold">
+                                        View linkedin
+                                    </span>
+                                </div>
                             </div>
                             <div style="flex:0.75; display: flex; justify-content: center;">
                                 <img src="../static/img/dp.png" style="height: 75vh;">
@@ -324,32 +346,13 @@
             <ul>
                 <li><a href="https://www.linkedin.com/in/abass-ibrahim/" target="_blank"><img src='../static/img/linkedin logo.png' style="width: 2rem;"></a></li>
                 <li><a href="https://github.com/AbsIbs" target="_blank"><img src='../static/img/github logo.png' style="width: 2rem;"></a></li>
-                <li><a href="https://github.com/AbsIbs"><img src='../static/img/gmail.png' style="width: 2rem;"></a></li>
+                <li><a href="mailto:abassdibrahim@gmail.com"><img src='../static/img/gmail.png' style="width: 2rem;"></a></li>
             </ul>
         </div>
     </div>
     <script>
-        const text = document.querySelector(".sec-text");
-        const textLoad = () => {
-            setTimeout(() => {
-                text.textContent = "Data Scientist";
-            }, 0);
-            setTimeout(() => {
-                text.textContent = "Data Analyst";
-            }, 3000);
-            setTimeout(() => {
-                text.textContent = "Designer";
-            }, 5000);
-            setTimeout(() => {
-                text.textContent = "Entreprenuer";
-            }, 7800);
-        }
-        textLoad();
-        setInterval(textLoad, 10000);
-    </script>
-    <script>
         function iconChange(clicked_id) {
-            let elemList = ['about', 'skills', 'projects', 'experience', 'blogs', 'contact']
+            let elemList = ['intro', 'about', 'skills', 'projects', 'experience', 'blogs']
 
             for (let i=0; i < elemList.length; i++) {
                 let elemBG = document.getElementById(elemList[i]);
