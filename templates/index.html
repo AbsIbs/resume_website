@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/01048f2c11.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -19,9 +18,9 @@
         <nav>
             <ul>
                 <li><a href="#homeSection">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="#aboutSection">About</a></li>
                 <li><a href="#skillsSection">Skills</a></li>
-                <li><a href="">Portfolio</a></li>
+                <li><a href="#portfolioSection">Portfolio</a></li>
                 <li>|</li>
             </ul>
             <div class="navExtra">
@@ -74,6 +73,11 @@
                 <!-- </div>  -->
             </div>
         </section>
+        <section id="aboutSection">
+            <div class="mainContent">
+                <div class="header"><span>ABOUT</span></div>
+            </div>
+        </section>
         <!-- <section id="aboutSection">
             <div class="mainContent">
                 <div>
@@ -100,7 +104,7 @@
                 </div> 
             </div>
         </section> -->
-        <section id="skillsSection">
+        <section id="skillsSection" style="background-color: #212121;">
             <div class="mainContent">
                 <div class="header"><span>SKILLS</span></div>
                 <div class="skillContent" style="display: flex; gap: 1rem; flex-direction: column;">
@@ -209,10 +213,10 @@
                 </div>
             </div>
         </section>
-        <section id="projectsSection">
+        <section id="portfolioSection">
             <div class="mainContent">
                 <div class="header" style="flex: column;">
-                    <span>FEATURED PROJECTS</span>
+                    <span>PORTFOLIO</span>
                     <a href="https://github.com/AbsIbs" target="_blank">
                         <div class="projectSeeAll">
                             See all
@@ -344,19 +348,9 @@
                 </div>
             </div>
         </section>
-        <section id="experienceSection">
-            <div class="mainContent">
-                <div class="header"><span>WORK EXPERIENCE</span></div>
-            </div>
-        </section>
-        <section id="blogsSection">
-            <div class="mainContent">
-                <div class="header"><span>BLOGS</span></div>
-            </div>
-        </section>
-        <section id="contactSection">
-            <div class="mainContent">
-                <div class="header"><span>CONTACT ME</span></div>
+        <section id="#copyrightSection" style="background-color: #212121; height: auto;">
+            <div style="display: flex; padding: 2rem; justify-content: center; align-items: center; width: 100%;">
+                Copyright © 2022 All Rights Reserved.
             </div>
         </section>
     </div>
@@ -397,11 +391,12 @@
                 let elemList = ['img-1', 'img-2', 'img-3', 'img-4']
                 for (let i=0; i < elemList.length; i++) {
                     let href = document.getElementById(elemList[i]);
-                    href.style.display = "none";
+                    href.style.visibility = "hidden";
                 }
 
                 let href = e.target.parentElement.getAttribute('href')
-                $(href).fadeIn();
+                /* $(href).fadeIn(); */
+                $(href).css('visibility','visible').hide().fadeIn('slow');
                 e.preventDefault();
             })
         })

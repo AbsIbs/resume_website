@@ -332,7 +332,7 @@ section {
     left: 0;
     margin-top: 1%;
     width: 100%;
-    display: none;
+    visibility: hidden;
 }
 
 .thumbnailWrapper .thumbnailContainer .tabContent .blog-content{
@@ -370,40 +370,18 @@ section {
 }
 
 .btn-viewRepo{
-    border: 1px solid #808080;
-    color: #808080;
-}
-
-.btn-viewRepo:hover{
-    background-color: white;
+    /* border: 1px solid #808080; */
     color: black;
-    border: none;
+    background-color: white;
     font-weight: bold;
 }
 
 .btn-launchWebappp{
-    border: 1px solid #808080;
-    color: #808080;
-}
-
-.btn-launchWebappp:hover {
-    background-color: #CF4C12;
+    /* border: 1px solid #808080; */
     color: black;
-    border: none;
+    background-color: #CF4C12;
     font-weight: bold;
 }
-
-/* Buttons within hover effect */
-
-/* .btn-viewRepo{
-    background-color: white;
-    color: black;
-}
-
-.btn-launchWebappp{
-    background-color: #CF4C12;
-    color: black;
-} */
 
 .backgroundImage{
     height: 100vh;
