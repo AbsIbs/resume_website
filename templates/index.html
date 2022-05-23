@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <title>Abass Resume Website</title>
 </head>
 <body>
     <div class="container">
-        <nav>
-            <ul>
+        <nav class="topNav">
+            <ul id="nav">
                 <li><a href="#homeSection">Home</a></li>
                 <li><a href="#aboutSection">About</a></li>
                 <li><a href="#skillsSection">Skills</a></li>
@@ -33,6 +34,13 @@
                 <a href="#" class="contactMe">Contact Me</a>
             </div>
         </nav>
+       <!--  <nav class="sideNav">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/abass-ibrahim/" target="_blank"><img src="../static/img/linkedin logo.png" style="height: 30px;"></a></li>
+                <li><a href="https://github.com/AbsIbs" target="_blank"><img src="../static/img/github logo.png" style="height: 30px;"></a></li>
+                <li><a href="">c</a></li>
+            </ul>
+        </nav> -->
         <section id="homeSection" class="backgroundImage">
             <div class="mainContent">
                 <!-- <div> -->
@@ -104,7 +112,7 @@
                 </div> 
             </div>
         </section> -->
-        <section id="skillsSection" style="background-color: #212121;">
+        <section id="skillsSection" style="background-color: #212121; height: auto;">
             <div class="mainContent">
                 <div class="header"><span>SKILLS</span></div>
                 <div class="skillContent" style="display: flex; gap: 1rem; flex-direction: column;">
@@ -348,43 +356,13 @@
                 </div>
             </div>
         </section>
-        <section id="#copyrightSection" style="background-color: #212121; height: auto;">
-            <div style="display: flex; padding: 2rem; justify-content: center; align-items: center; width: 100%;">
-                Copyright © 2022 All Rights Reserved.
+        <section id="#copyrightSection" style="background-color: #212121; height: auto; padding: 0">
+            <div style="display: flex; padding: 1rem; justify-content: center; align-items: center; width: 100%; flex-direction: column;">
+                <p style="font-family: 'Cedarville Cursive', cursive; font-size: 2rem; color: #CF4C12;">Abass Ibrahim</p>
+                <p>Copyright © 2022 All Rights Reserved.</p>         
             </div>
         </section>
     </div>
-    <script>
-        function aboutIconChange() {
-            let introBG = document.getElementById('intro');
-            introBG.style.backgroundColor = "";
-            let introIcon = document.getElementById('introIcon')
-            introIcon.style.color = 'grey';
-
-            let elemBG = document.getElementById('about');
-            elemBG.style.backgroundColor = '#312F2E';
-            let elemIcon = document.getElementById('aboutIcon')
-            elemIcon.style.color = '#CF4C12'; 
-        }
-    </script>
-    <script>
-        function iconChange(clicked_id) {
-            let elemList = ['intro', 'about', 'skills', 'projects', 'experience', 'blogs']
-
-            for (let i=0; i < elemList.length; i++) {
-                let elemBG = document.getElementById(elemList[i]);
-                elemBG.style.backgroundColor = "";
-                let elemIcon = document.getElementById(elemList[i] + 'Icon')
-                elemIcon.style.color = 'grey';
-            }
-
-            let elemBG = document.getElementById(clicked_id);
-            elemBG.style.backgroundColor = '#312F2E';
-
-            let elemIcon = document.getElementById(clicked_id + 'Icon')
-            elemIcon.style.color = '#CF4C12'; 
-        }
-    </script>
     <script>
         $(document).ready(function(){
             $('.thumbnailContainer .grid-col li a').click(function(e){

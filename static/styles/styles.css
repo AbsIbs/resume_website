@@ -12,36 +12,76 @@ body{
     background: #151515;
 }
 
-nav{
+/* Nav Bar */
+.topNav{
     display: flex;
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5px 0;
+    padding: 5px 25px;
     position: fixed;
+    z-index: 2;
+    background-color: #191919;
+    box-shadow: 0 2.5px 20px black;
+
 }
 
-nav ul{
+.topNav ul{
     flex: 1;
     text-align: right;
     padding-right: 30px;
 }
 
-nav ul li{
+.topNav ul li{
     display: inline-block;
     list-style: none;
     margin: 20px 30px;
     font-weight: bold;
+    position: relative;
+}
+
+.topNav ul li a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+
+.topNav ul li a:hover::after{
+    width: 50%;
 }
 
 .navExtra{
-/*     border: 1px red solid;  */
     display: flex; 
     align-items: center; 
     margin-right: 5rem;
     gap: 2rem;
 }
 
+/* .sideNav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 5px 0;
+    position: fixed;
+    right: 0;
+}
+
+.sideNav ul{
+    background-color: #151515;
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+ */
 .contactMe{
     font-weight: bold; 
     border: white 2px solid;
@@ -52,6 +92,11 @@ nav ul li{
 .contactMe:hover{
     background-color: white;
     color: black
+}
+
+/* Nav bar effect */
+.scrolling-active{
+    background-color: #191919;
 }
 
 .mainContent{
@@ -179,6 +224,8 @@ section {
     height: 100%;
     width: 100%;
     scroll-snap-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .container {
@@ -275,14 +322,15 @@ section {
     justify-content: center; 
     float: right; 
     padding: 0.5rem 2rem 0.5rem;
-    color: #808080;
-    font-weight: normal;
+    color: white;
+    border-color: white;
+    font-weight: bold;
     font-size: 1rem;
 }
 
 .projectSeeAll:hover{
-    color: white;
-    border-color: white;
+    color: black;
+    background-color: white;
 }
 
 .thumbnailWrapper .thumbnailContainer .grid-col{
