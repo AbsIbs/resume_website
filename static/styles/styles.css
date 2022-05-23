@@ -31,7 +31,7 @@ border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: black;  
+background: black;
 }
 
 /* Nav Bar */
@@ -527,4 +527,20 @@ section {
 .timelineDesc{
     padding: 1rem 35px 1rem;
     color: #ADADB8;
+}
+
+.timelineDateIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.timelineDateIcon i{
+    color: #CF4C12
+}
+
+.timelineDateIcon span{
+    color: #CF4C12;
+    font-weight: bold;
 }
