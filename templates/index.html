@@ -15,319 +15,326 @@
     <title>Abass Resume Website</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <ul style="display: flex; flex-direction: column; align-items: center; height: 50%; justify-content: center;">    
-                <li id="intro" style="background-color: #312F2E;"><a href="#introSection" onclick="iconChange('intro')"><i id="introIcon" class="fa-solid fa-house fa-xl" style="color: #CF4C12;"></i></a></li>
-                <li id="about"><a href="#aboutSection" onclick="iconChange('about')"><i id="aboutIcon" class="fa-solid fa-circle-info fa-xl" style="color: grey;"></i></a></li>
-                <li id="skills"><a href="#skillsSection" onclick="iconChange('skills')"><i id="skillsIcon" class="fa-solid fa-toolbox fa-xl" style="color: grey;"></i></a></li>
-                <li id="projects"><a href="#projectsSection" onclick="iconChange('projects')"><i id="projectsIcon" class="fa-brands fa-python fa-xl" style="color: grey;"></i></a></li>
-                <li id="experience"><a href="#experienceSection" onclick="iconChange('experience')"><i id="experienceIcon" class="fa-solid fa-user-tie fa-xl" style="color: grey;"></i></a></li>
-                <li id="blogs"><a href="#blogsSection" onclick="iconChange('blogs')"><i id="blogsIcon" class="fa-brands fa-blogger fa-xl" style="color: grey;"></i></i></a></li>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#homeSection">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#skillsSection">Skills</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li>|</li>
             </ul>
-        </div>
-        <div class="container">
-            <section id="introSection" class="backgroundImage">
-                <div class="mainContent">
-                    <div>
-                        <div class="header"><span>Hello World</span></div>
-                        <div class="introContent">
-                            <div class="bottomContentPosition" style="color: white; margin-bottom: 5rem; width: 50%;">
-                                <p style="font-size: 4rem; font-weight: normal; font-family: 'Nunito', sans-serif;"> 
-                                    My name is, <span style="color: #CF4C12; font-weight: bold;">Abass Ibrahim.</span>
-                                </p>
-                                <!-- <h3 style="font-size: 1.5rem; font-weight: bold; font-family: 'Nunito', sans-serif;">
-                                    I help companies create and deploy innovative machine learning apps
-                                </h3> -->
-                                <p style="margin-top: 1rem;">
-                                    Based in London, I'm passionate about handling structured and unstructured data to create classification, regression, NLP & Time Series models. 
-                                    Overall, I want to help companies create and deploy innovative machine learning apps 
-                                </p>
-                                <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 2rem;">
-                                    <a href="../static/docs/Resume.pdf" target="_blank">
-                                        <div class="introLink introLinkCV">View CV</div>
-                                    </a>
-                                    <a href="mailto:abassdibrahim@gmail.com">
-                                        <div class="introLink introLinkContactMe">Contact Me</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="downButtonContainer" style="display: flex; justify-content: center;">
-                                <a href="#aboutSection" class="scrollDown" onclick="aboutIconChange()">
-                                    <div class="mouse">
-                                        <span></span>
-                                    </div>
-                                    <div class="arrow">
-                                        <span></span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </section>
-            <section id="aboutSection">
-                <div class="mainContent">
-                    <div>
-                        <div class="header"><span>ABOUT</span></div>
-                        <div class="content">
+            <div class="navExtra">
+                <a href="https://www.linkedin.com/in/abass-ibrahim/" target="_blank">
+                    <img src="../static/img/linkedin logo.png" style="height: 30px;">
+                </a>
+                <a href="https://github.com/AbsIbs" target="_blank">
+                    <img src="../static/img/github logo.png" style="height: 30px;">
+                </a>
+                <a href="#" class="contactMe">Contact Me</a>
+            </div>
+        </nav>
+        <section id="homeSection" class="backgroundImage">
+            <div class="mainContent">
+                <!-- <div> -->
+                    <!-- <div class="header"><span>Hello World</span></div> -->
+                    <div class="introContent" >
+                        <div class="bottomContentPosition" style="color: white; margin-bottom: 5rem; width: 65%;">
+                            <p style="font-size: 3rem; font-weight: normal; font-family: 'Nunito', sans-serif;"> 
+                                My name is, <span style="color: #CF4C12; font-weight: bold;">Abass Ibrahim.</span>
+                            </p>
                             <div class="title" style="flex: 1;">
-                                <span style="font-size: 50px; font-weight: bold;">
+                                <span style="font-size: 30px; font-weight: bold;">
                                     I'm
                                 </span>
-                                <span id="titles" style="font-size: 50px; font-weight: bold; color: #CF4C12;"></span>
+                                <span id="titles" style="font-size: 30px; font-weight: bold; color: #CF4C12;"></span>
                                 <p style="font-weight: normal; font-size: 1rem; line-height: 200%; margin-top: 1.5rem;">
                                     Experienced Data Scientist with a degree in Accounting & Finance and a keen interest in Entrepreneurship & Capital Markets. 
                                     Skilled at utilizing data acquisition, modeling, and statistical analysis, to create customer-facing dashboards, applications and machine learning models that assist companies with product development, 
-                                    market research, design and analysis. With over 600hrs in Data Science training, I am passionate about collaborating with teams to help build and grow innovative companies, products and solutions.
+                                    market research, design and analysis. Overall, I am passionate about collaborating with teams to help build and grow innovative companies, products and solutions.
                                 </p>
-                                <a href="https://www.linkedin.com/in/abass-ibrahim/" target="_blank" style="background-color: #CF4C12; border-radius: 2rem; display: flex; align-items: center; justify-content: center; width: 15rem; height: 3.5rem; margin-top: 2rem; color: black; font-weight: bold">
-                                    View linkedIn
+                            </div>
+                            <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 2rem;">
+                                <a href="../static/docs/Resume.pdf" target="_blank">
+                                    <div class="introLink introLinkCV">View CV</div>
                                 </a>
-                            </div>
-                            <div style="flex:0.75; display: flex; justify-content: center;">
-                                <img src="../static/img/dp.png" style="height: 75vh;">
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </section>
-            <section id="skillsSection">
-                <div class="mainContent">
-                    <div class="header"><span>SKILLS</span></div>
-                    <div class="skillContent" style="display: flex; gap: 1rem; flex-direction: column;">
-                        <div class="row1" style="display: flex; flex-direction: row;">
-                            <div style="flex: 1; margin: 1rem;">
-                                <div style="display: flex; gap: 0.5rem">
-                                    <img class="iconForSkills" src="../static/img/python.png">
-                                    <img class="iconForSkills" src="../static/img/pandas.png">
-                                    <img class="iconForSkills" src="../static/img/sql.png">
-                                </div>
-                                <div class="skillHeading">
-                                    Data Analysis
-                                </div>
-                                <div class="skillTitle">Python | Pandas | SQL</div>
-                                <div class="skillDesc">
-                                    Experience using database querying languages such as SQL and the Pandas library to gather, wrangle and analyse data.
-                                </div>
-                            </div>
-                            <div style="flex: 1; margin: 1rem;">
-                                <div style="display: flex; gap: 0.5rem;">
-                                    <img class="iconForSkills" src="../static/img/seaborn.svg">
-                                    <img class="iconForSkills" src="../static/img/plotly.png">
-                                    <img class="iconForSkills" src="../static/img/tableau-software.svg">
-                                </div>
-                                <div class="skillHeading">
-                                    Data Visualisation
-                                </div>
-                                <div class="skillTitle">Seaborn | Plotly | Tabealu</div>
-                                <div class="skillDesc">
-                                    Handled Data Visualisation by creating interactive graphs using python libraries as well as dashboards using Tableau. 
-                                </div>
-                            </div>
-                            <div style="flex: 1; margin: 1rem;">
-                                <div style="display: flex; gap: 0.5rem;">
-                                    <img class="iconForSkills" src="../static/img/numpy.png">
-                                    <img class="iconForSkills" src="../static/img/sklearn.svg">
-                                </div>
-                                <div class="skillHeading">
-                                    Machine Learning
-                                </div>
-                                <div class="skillTitle">Numpy | Sklearn</div>
-                                <div class="skillDesc">
-                                    Utilized traditional regression and classification algorithms e.g. SVMs to model structured data. 
-                                    Also modelled Time Series Data using SARIMAX/Facebook Prophet and created NLP models using vectorization.
-                                </div>
-                            </div>
-                            <div style="flex: 1; margin: 1rem;">
-                                <div style="display: flex; gap: 0.5rem;">
-                                    <img class="iconForSkills" src="../static/img/tf.png">
-                                    <img class="iconForSkills" src="../static/img/gym.png">
-                                </div>
-                                <div class="skillHeading">
-                                    Advanced ML
-                                </div>
-                                <div class="skillTitle">Tensorflow | Open AI Gym</div>
-                                <div class="skillDesc">
-                                    Worked with Neural Networks architectures (LSTM, Conv, GRU) to create regression and classification models.
-                                    Also used Reinforcement Learning algorithms to model financial data.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row2" style="display: flex; flex: 1; flex-direction: row;">
-                            <div style="flex: 1; margin: 1rem;">
-                                <div style="display: flex; gap: 0.5rem;">
-                                    <img class="iconForSkills" src="../static/img/html.png">
-                                    <img class="iconForSkills" src="../static/img/css.png">
-                                    <img class="iconForSkills" src="../static/img/js.png">
-                                    <img class="iconForSkills" src="../static/img/streamlit-mark-color.svg">
-                                    <img class="iconForSkills" src="../static/img/flask.png">        
-                                </div>
-                                <div class="skillHeading">
-                                    Web Development
-                                </div>
-                                <div class="skillTitle">HTML | CSS | JS | Streamlit | Flask</div>
-                                <div class="skillDesc">
-                                    Deployed simple ML webapps using Streamlit and more complex ones using a combination of HTML, CSS and JS with python's Flask as a backend.
-                                </div>
-                            </div>
-                            <div style="flex: 1; margin: 1rem;">
-                                <div style="display: flex; gap: 0.5rem;">
-                                    <img class="iconForSkills" src="../static/img/figma.png">
-                                    <img class="iconForSkills" src="../static/img/sketch.png">
-                                </div>
-                                <div class="skillHeading">
-                                    UI/UX Designing
-                                </div>
-                                <div class="skillTitle">Figma | Sketch</div>
-                                <div class="skillDesc">
-                                    Designed over 300 screens worth of desktop and mobile applications.
-                                </div>
-                            </div>
-                            <div style="flex: 1; margin: 1rem;">
-                                <div style="display: flex; gap: 0.5rem;">
-                                    <img class="iconForSkills" src="../static/img/premiere pro.png">
-                                    <img class="iconForSkills" src="../static/img/after effects.png">
-                                </div>
-                                <div class="skillHeading">
-                                    Video Editing
-                                </div>
-                                <div class="skillTitle">Adobe Premiere Pro | Adobe After Effects</div>
-                                <div class="skillDesc">
-                                   Created promotional trailer videos that utilize typography as well as engaging lifestyle videos.
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="projectsSection">
-                <div class="mainContent">
-                    <div class="header" style="flex: column;">
-                        <span>FEATURED PROJECTS</span>
-                        <a href="https://github.com/AbsIbs" target="_blank">
-                            <div class="projectSeeAll">
-                                See all
+                    <div class="downButtonContainer" style="display: flex; justify-content: center; margin-top: -10%;">
+                        <a href="#aboutSection" class="scrollDown">
+                            <div class="mouse">
+                                <span></span>
+                            </div>
+                            <div class="arrow">
+                                <span></span>
                             </div>
                         </a>
                     </div>
-                    <div class="thumbnailWrapper">
-                        <div class="thumbnailContainer">
-                            <ul class="grid-col">
-                                <li><a href="#img-1" style="cursor: pointer;">
-                                    <img src="../static/img/stocks.png" alt="">
-                                    <div class="projectTitle">Portfolio Optimization</div>
-                                </a></li>
-                                <li><a href="#img-2" style="cursor: pointer;">
-                                    <img src="../static/img/nedava.png" alt="">
-                                    <div class="projectTitle">Nevada Time Series</div>
-                                </a></li>
-                                <li><a href="#img-3" style="cursor: pointer;">
-                                    <img src="../static/img/h1n1.png" alt="">
-                                    <div class="projectTitle">Flu Vaccine Predictor</div>
-                                </a></li>
-                                <li><a href="#img-4" style="cursor: pointer;">
-                                    <img src="../static/img/house_price_predictor.png" alt="">
-                                    <div class="projectTitle">House Price Predictor</div>
-                                </a></li>
-                            </ul>
+                <!-- </div>  -->
+            </div>
+        </section>
+        <!-- <section id="aboutSection">
+            <div class="mainContent">
+                <div>
+                    <div class="header"><span>ABOUT</span></div>
+                    <div class="content">
+                        <div class="title" style="flex: 1;">
+                            <span style="font-size: 50px; font-weight: bold;">
+                                I'm
+                            </span>
+                            <span id="titles" style="font-size: 50px; font-weight: bold; color: #CF4C12;"></span>
+                            <p style="font-weight: normal; font-size: 1rem; line-height: 200%; margin-top: 1.5rem;">
+                                Experienced Data Scientist with a degree in Accounting & Finance and a keen interest in Entrepreneurship & Capital Markets. 
+                                Skilled at utilizing data acquisition, modeling, and statistical analysis, to create customer-facing dashboards, applications and machine learning models that assist companies with product development, 
+                                market research, design and analysis. With over 600hrs in Data Science training, I am passionate about collaborating with teams to help build and grow innovative companies, products and solutions.
+                            </p>
+                            <a href="https://www.linkedin.com/in/abass-ibrahim/" target="_blank" style="background-color: #CF4C12; border-radius: 2rem; display: flex; align-items: center; justify-content: center; width: 15rem; height: 3.5rem; margin-top: 2rem; color: black; font-weight: bold">
+                                View linkedIn
+                            </a>
+                        </div>
+                        <div style="flex:0.75; display: flex; justify-content: center;">
+                            <img src="../static/img/dp.png" style="height: 75vh;">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section> -->
+        <section id="skillsSection">
+            <div class="mainContent">
+                <div class="header"><span>SKILLS</span></div>
+                <div class="skillContent" style="display: flex; gap: 1rem; flex-direction: column;">
+                    <div class="row1" style="display: flex; flex-direction: row;">
+                        <div style="flex: 1; margin: 1rem;">
+                            <div style="display: flex; gap: 0.5rem">
+                                <img class="iconForSkills" src="../static/img/python.png">
+                                <img class="iconForSkills" src="../static/img/pandas.png">
+                                <img class="iconForSkills" src="../static/img/sql.png">
+                            </div>
+                            <div class="skillHeading">
+                                Data Analysis
+                            </div>
+                            <div class="skillTitle">Python | Pandas | SQL</div>
+                            <div class="skillDesc">
+                                Experience using database querying languages such as SQL and the Pandas library to gather, wrangle and analyse data.
+                            </div>
+                        </div>
+                        <div style="flex: 1; margin: 1rem;">
+                            <div style="display: flex; gap: 0.5rem;">
+                                <img class="iconForSkills" src="../static/img/seaborn.svg">
+                                <img class="iconForSkills" src="../static/img/plotly.png">
+                                <img class="iconForSkills" src="../static/img/tableau-software.svg">
+                            </div>
+                            <div class="skillHeading">
+                                Data Visualisation
+                            </div>
+                            <div class="skillTitle">Seaborn | Plotly | Tabealu</div>
+                            <div class="skillDesc">
+                                Handled Data Visualisation by creating interactive graphs using python libraries as well as dashboards using Tableau. 
+                            </div>
+                        </div>
+                        <div style="flex: 1; margin: 1rem;">
+                            <div style="display: flex; gap: 0.5rem;">
+                                <img class="iconForSkills" src="../static/img/numpy.png">
+                                <img class="iconForSkills" src="../static/img/sklearn.svg">
+                            </div>
+                            <div class="skillHeading">
+                                Machine Learning
+                            </div>
+                            <div class="skillTitle">Numpy | Sklearn</div>
+                            <div class="skillDesc">
+                                Utilized traditional regression and classification algorithms e.g. SVMs to model structured data. 
+                                Also modelled Time Series Data using SARIMAX/Facebook Prophet and created NLP models using vectorization.
+                            </div>
+                        </div>
+                        <div style="flex: 1; margin: 1rem;">
+                            <div style="display: flex; gap: 0.5rem;">
+                                <img class="iconForSkills" src="../static/img/tf.png">
+                                <img class="iconForSkills" src="../static/img/gym.png">
+                            </div>
+                            <div class="skillHeading">
+                                Advanced ML
+                            </div>
+                            <div class="skillTitle">Tensorflow | Open AI Gym</div>
+                            <div class="skillDesc">
+                                Worked with Neural Networks architectures (LSTM, Conv, GRU) to create regression and classification models.
+                                Also used Reinforcement Learning algorithms to model financial data.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2" style="display: flex; flex: 1; flex-direction: row;">
+                        <div style="flex: 1; margin: 1rem;">
+                            <div style="display: flex; gap: 0.5rem;">
+                                <img class="iconForSkills" src="../static/img/html.png">
+                                <img class="iconForSkills" src="../static/img/css.png">
+                                <img class="iconForSkills" src="../static/img/js.png">
+                                <img class="iconForSkills" src="../static/img/streamlit-mark-color.svg">
+                                <img class="iconForSkills" src="../static/img/flask.png">        
+                            </div>
+                            <div class="skillHeading">
+                                Web Development
+                            </div>
+                            <div class="skillTitle">HTML | CSS | JS | Streamlit | Flask</div>
+                            <div class="skillDesc">
+                                Deployed simple ML webapps using Streamlit and more complex ones using a combination of HTML, CSS and JS with python's Flask as a backend.
+                            </div>
+                        </div>
+                        <div style="flex: 1; margin: 1rem;">
+                            <div style="display: flex; gap: 0.5rem;">
+                                <img class="iconForSkills" src="../static/img/figma.png">
+                                <img class="iconForSkills" src="../static/img/sketch.png">
+                            </div>
+                            <div class="skillHeading">
+                                UI/UX Designing
+                            </div>
+                            <div class="skillTitle">Figma | Sketch</div>
+                            <div class="skillDesc">
+                                Designed over 300 screens worth of desktop and mobile applications.
+                            </div>
+                        </div>
+                        <div style="flex: 1; margin: 1rem;">
+                            <div style="display: flex; gap: 0.5rem;">
+                                <img class="iconForSkills" src="../static/img/premiere pro.png">
+                                <img class="iconForSkills" src="../static/img/after effects.png">
+                            </div>
+                            <div class="skillHeading">
+                                Video Editing
+                            </div>
+                            <div class="skillTitle">Adobe Premiere Pro | Adobe After Effects</div>
+                            <div class="skillDesc">
+                                Created promotional trailer videos that utilize typography as well as engaging lifestyle videos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projectsSection">
+            <div class="mainContent">
+                <div class="header" style="flex: column;">
+                    <span>FEATURED PROJECTS</span>
+                    <a href="https://github.com/AbsIbs" target="_blank">
+                        <div class="projectSeeAll">
+                            See all
+                        </div>
+                    </a>
+                </div>
+                <div class="thumbnailWrapper">
+                    <div class="thumbnailContainer">
+                        <ul class="grid-col">
+                            <li><a href="#img-1" style="cursor: pointer;">
+                                <img src="../static/img/stocks.png" alt="">
+                                <div class="projectTitle">Portfolio Optimization</div>
+                            </a></li>
+                            <li><a href="#img-2" style="cursor: pointer;">
+                                <img src="../static/img/nedava.png" alt="">
+                                <div class="projectTitle">Nevada Time Series</div>
+                            </a></li>
+                            <li><a href="#img-3" style="cursor: pointer;">
+                                <img src="../static/img/h1n1.png" alt="">
+                                <div class="projectTitle">Flu Vaccine Predictor</div>
+                            </a></li>
+                            <li><a href="#img-4" style="cursor: pointer;">
+                                <img src="../static/img/house_price_predictor.png" alt="">
+                                <div class="projectTitle">House Price Predictor</div>
+                            </a></li>
+                        </ul>
 
 
-                            <!-- preview content -->
-                            <div class="data-content">
-                                <div id="img-1" class="tabContent">
-                                    <div class="blog-content">
-                                        <div class="img">
-                                            <img src="../static/img/portfolio_optimization_image.png" alt="" style="height: 40vh;">
-                                        </div>
-                                        <div class="title">
-                                            <h2>Portfolio Optimization Using Reinforcement Learning</h2>
-                                            <p>
-                                                <span style="font-weight: bold;">Business Case</span>
-                                                <br>
-                                                An investor wishes to know how best to allocate their portfolio of assets given the changes in the stock market the previous day.
-                                            </p>
-                                            <p>
-                                                <span style="font-weight: bold;">Results</span>
-                                                <br>
-                                                Trained a trading model using reinforcement learning algorithms to buy/sell/hold stock holdings within a portfolio in such a way as to maximise ROI. Yielded a 2% increase in comparison to the market when backtested.
-                                            </p>
-                                            <div class="repoWebappContainer">
-                                                <a href="https://github.com/AbsIbs/portfolio_optimization" class="btn-viewRepo" target="_blank">View Repo</a>
-                                                <a href="#" class="btn-launchWebappp" target="_blank">Launch Webapp</a>
-                                            </div>
+                        <!-- preview content -->
+                        <div class="data-content">
+                            <div id="img-1" class="tabContent">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="../static/img/portfolio_optimization_image.png" alt="" style="height: 40vh;">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Portfolio Optimization Using Reinforcement Learning</h2>
+                                        <p>
+                                            <span style="font-weight: bold;">Business Case</span>
+                                            <br>
+                                            An investor wishes to know how best to allocate their portfolio of assets given the changes in the stock market the previous day.
+                                        </p>
+                                        <p>
+                                            <span style="font-weight: bold;">Results</span>
+                                            <br>
+                                            Trained a trading model using reinforcement learning algorithms to buy/sell/hold stock holdings within a portfolio in such a way as to maximise ROI. Yielded a 2% increase in comparison to the market when backtested.
+                                        </p>
+                                        <div class="repoWebappContainer">
+                                            <a href="https://github.com/AbsIbs/portfolio_optimization" class="btn-viewRepo" target="_blank">View Repo</a>
+                                            <a href="#" class="btn-launchWebappp" target="_blank">Launch Webapp</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="img-2" class="tabContent">
-                                    <div class="blog-content">
-                                        <div class="img">
-                                            <img src="../static/img/nevada_project_image.png" alt="" style="height: 40vh;">
-                                        </div>
-                                        <div class="title">
-                                            <h2>Nevada Time Series Analysis</h2>
-                                            <p>
-                                                <span style="font-weight: bold;">Business Case</span>
-                                                <br>
-                                                Property investors wish to know which zipcode in Nevada is best to invest in for the next month.
-                                            </p>
-                                            <p>
-                                                <span style="font-weight: bold;">Results</span>
-                                                <br>
-                                                Forecasted house prices in Nevada using SARIMAX, Facebook Prophet and Neural Network architectures (LSTM, GRU, CNN) with the best model achieving a MAPE (mean average percentage error) of 0.035.
-                                            </p>
-                                            <div class="repoWebappContainer">
-                                                <a href="https://github.com/AbsIbs/nevada_time_series" class="btn-viewRepo" target="_blank">View Repo</a>
-                                                <a href="https://public.tableau.com/app/profile/abs4364/viz/NevadaTimeSeriesAnalysis/Dashboard" class="btn-launchWebappp" target="_blank">Launch Dashboard</a>
-                                            </div>
+                            </div>
+                            <div id="img-2" class="tabContent">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="../static/img/nevada_project_image.png" alt="" style="height: 40vh;">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Nevada Time Series Analysis</h2>
+                                        <p>
+                                            <span style="font-weight: bold;">Business Case</span>
+                                            <br>
+                                            Property investors wish to know which zipcode in Nevada is best to invest in for the next month.
+                                        </p>
+                                        <p>
+                                            <span style="font-weight: bold;">Results</span>
+                                            <br>
+                                            Forecasted house prices in Nevada using SARIMAX, Facebook Prophet and Neural Network architectures (LSTM, GRU, CNN) with the best model achieving a MAPE (mean average percentage error) of 0.035.
+                                        </p>
+                                        <div class="repoWebappContainer">
+                                            <a href="https://github.com/AbsIbs/nevada_time_series" class="btn-viewRepo" target="_blank">View Repo</a>
+                                            <a href="https://public.tableau.com/app/profile/abs4364/viz/NevadaTimeSeriesAnalysis/Dashboard" class="btn-launchWebappp" target="_blank">Launch Dashboard</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="img-3" class="tabContent">
-                                    <div class="blog-content">
-                                        <div class="img">
-                                            <img src="../static/img/flu_vaccine_project_image.png" alt="" style="height: 40vh;">
-                                        </div>
-                                        <div class="title">
-                                            <h2>Flu Vaccine Predictor</h2>
-                                            <p>
-                                                <span style="font-weight: bold;">Business Case</span>
-                                                <br>
-                                                Public Health agencies want to find a means to accurately predict the vaccination status of an individual i.e. whether or not they have taken the flu/h1n1 vaccine
-                                            </p>
-                                            <p>
-                                                <span style="font-weight: bold;">Results</span>
-                                                <br>
-                                                Constructed a pipeline using classification models (Trees, Logistic Regression, Boosting) on over 26,000 responses from the US National Flu Survey from 2009. When optimized with Optuna, best model achieved 78% accuracy.
-                                            </p>
-                                            <div class="repoWebappContainer">
-                                                <a href="https://github.com/AbsIbs/H1N1_flu_vaccine_project" class="btn-viewRepo" target="_blank">View Repo</a>
-                                                <a href="https://share.streamlit.io/absibs/flu_vaccine_predictor/main/stream.py" class="btn-launchWebappp" target="_blank">Launch Webapp</a>
-                                            </div>
+                            </div>
+                            <div id="img-3" class="tabContent">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="../static/img/flu_vaccine_project_image.png" alt="" style="height: 40vh;">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Flu Vaccine Predictor</h2>
+                                        <p>
+                                            <span style="font-weight: bold;">Business Case</span>
+                                            <br>
+                                            Public Health agencies want to find a means to accurately predict the vaccination status of an individual i.e. whether or not they have taken the flu/h1n1 vaccine
+                                        </p>
+                                        <p>
+                                            <span style="font-weight: bold;">Results</span>
+                                            <br>
+                                            Constructed a pipeline using classification models (Trees, Logistic Regression, Boosting) on over 26,000 responses from the US National Flu Survey from 2009. When optimized with Optuna, best model achieved 78% accuracy.
+                                        </p>
+                                        <div class="repoWebappContainer">
+                                            <a href="https://github.com/AbsIbs/H1N1_flu_vaccine_project" class="btn-viewRepo" target="_blank">View Repo</a>
+                                            <a href="https://share.streamlit.io/absibs/flu_vaccine_predictor/main/stream.py" class="btn-launchWebappp" target="_blank">Launch Webapp</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="img-4" class="tabContent">
-                                    <div class="blog-content">
-                                        <div class="img">
-                                            <img src="../static/img/kc_county_project_image.png" alt="" style="height: 40vh;">
-                                        </div>
-                                        <div class="title">
-                                            <h2>US House Price Predictor</h2>
-                                            <p>
-                                                <span style="font-weight: bold;">Business Case</span>
-                                                <br>
-                                                A real estate company based in Kings County, US aims to better inform its clients by creating an house price predictor based on numerous features e.g. bedroom size, sqft living space.
-                                            </p>
-                                            <p>
-                                                <span style="font-weight: bold;">Results</span>
-                                                <br>
-                                                Performed inferential and predictive modeling on over 21,000 houses through training multiple linear regression models. Achieved an R squared of 0.85 through feature engineering and webscraping.
-                                            </p>
-                                            <div class="repoWebappContainer">
-                                                <a href="https://github.com/AbsIbs/King_County_Project" class="btn-viewRepo" target="_blank">View Repo</a>
-                                                <a href="https://kc-house-predictor.herokuapp.com/" class="btn-launchWebappp" target="_blank">Launch Webapp</a>
-                                            </div>
+                            </div>
+                            <div id="img-4" class="tabContent">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="../static/img/kc_county_project_image.png" alt="" style="height: 40vh;">
+                                    </div>
+                                    <div class="title">
+                                        <h2>US House Price Predictor</h2>
+                                        <p>
+                                            <span style="font-weight: bold;">Business Case</span>
+                                            <br>
+                                            A real estate company based in Kings County, US aims to better inform its clients by creating an house price predictor based on numerous features e.g. bedroom size, sqft living space.
+                                        </p>
+                                        <p>
+                                            <span style="font-weight: bold;">Results</span>
+                                            <br>
+                                            Performed inferential and predictive modeling on over 21,000 houses through training multiple linear regression models. Achieved an R squared of 0.85 through feature engineering and webscraping.
+                                        </p>
+                                        <div class="repoWebappContainer">
+                                            <a href="https://github.com/AbsIbs/King_County_Project" class="btn-viewRepo" target="_blank">View Repo</a>
+                                            <a href="https://kc-house-predictor.herokuapp.com/" class="btn-launchWebappp" target="_blank">Launch Webapp</a>
                                         </div>
                                     </div>
                                 </div>
@@ -335,30 +342,23 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="experienceSection">
-                <div class="mainContent">
-                    <div class="header"><span>WORK EXPERIENCE</span></div>
-                </div>
-            </section>
-            <section id="blogsSection">
-                <div class="mainContent">
-                    <div class="header"><span>BLOGS</span></div>
-                </div>
-            </section>
-            <section id="contactSection">
-                <div class="mainContent">
-                    <div class="header"><span>CONTACT ME</span></div>
-                </div>
-            </section>
-        </div>
-        <div class="rightSideBar">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/abass-ibrahim/" target="_blank"><img src='../static/img/linkedin logo.png' style="width: 2rem;"></a></li>
-                <li><a href="https://github.com/AbsIbs" target="_blank"><img src='../static/img/github logo.png' style="width: 2rem;"></a></li>
-                <li><a href="mailto:abassdibrahim@gmail.com"><img src='../static/img/gmail.png' style="width: 2rem;"></a></li>
-            </ul>
-        </div>
+            </div>
+        </section>
+        <section id="experienceSection">
+            <div class="mainContent">
+                <div class="header"><span>WORK EXPERIENCE</span></div>
+            </div>
+        </section>
+        <section id="blogsSection">
+            <div class="mainContent">
+                <div class="header"><span>BLOGS</span></div>
+            </div>
+        </section>
+        <section id="contactSection">
+            <div class="mainContent">
+                <div class="header"><span>CONTACT ME</span></div>
+            </div>
+        </section>
     </div>
     <script>
         function aboutIconChange() {
